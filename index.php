@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>UMADI</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="rsc/css/bootstrap.min.css">
+	<script type="text/javascript" src="rsc/js/bootstrap.js"></script>
 </head>
 <body>
 
@@ -14,5 +16,10 @@
 		</ul>
 	</nav>
 </div>
+
+<form action="post">
+	<input type="text" name="user">
+	<input type="text" name="pass">
+</form>
 
 </body>
