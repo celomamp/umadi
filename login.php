@@ -15,7 +15,7 @@
 		<div class="form-group">
 			<input type='text' name='user' class="form-control" id='user' placeholder="Username/e-mail" >
 			<input type='password' name='pass' class="form-control" id='pass' placeholder="Senha">
-			<input type="submit" class="btn btn-success" class="submit" text="Logar">
+			<input type="submit" class="btn btn-success" class="submit" value='Logar'>
 		</div>
 	</form>
 </div>

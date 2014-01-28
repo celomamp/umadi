@@ -25,19 +25,60 @@
 
 <nav>
 	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Diretoria</a></li>
-		<li><a href="#">Agenda</a></li>
-		<li><a href="#">Recados</a></li>
-		<li><a href="#">Atividades</a></li>
-		<li><a href="#">Coral</a></li>
+		<li><a href="./?pag=1">Home</a></li>
+		<li><a href="./?pag=2">Diretoria</a></li>
+		<li><a href="./?pag=3">Agenda</a></li>
+		<li><a href="./?pag=4">Recados</a></li>
+		<li><a href="./?pag=5">Atividades</a></li>
+		<li><a href="./?pag=6">Coral</a></li>
+		<li><a href="./?pag=7">Orquestra</a></li>
 		
 	</ul>
 
 </nav>
 
 <?php
-	require('login.php');
+
+	if(isset($_GET['pag'])){
+		$pag = $_GET['pag'];
+	}else{
+		$pag = 0;
+	}
+	
+	switch ($pag) {
+		case 1:
+			require('login.php');
+			break;
+
+		case 2:
+			require('diretoria.php');
+			break;
+
+		case 3:
+			require('agenda.php');
+			break;
+
+		case 4:
+			require('recados.php');
+			break;
+
+		case 5:
+			require('atividades.php');
+			break;
+
+		case 6:
+			require('coral.php');
+			break;
+
+		case 6:
+			require('orquestra.php');
+			break;
+		
+		default:
+			echo "<h1 class='text-center'> Bem Vindo à UMADI Network </h1>";
+			break;
+	}
+	
 ?>
 
 
