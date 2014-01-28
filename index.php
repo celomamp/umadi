@@ -70,7 +70,7 @@
 			require('coral.php');
 			break;
 
-		case 6:
+		case 7:
 			require('orquestra.php');
 			break;
 		
